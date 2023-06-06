@@ -6,9 +6,11 @@ python TTS/bin/train_tacotron.py --config_path TTS/tts/configs/config.json
 ```
    i use python 3.8.10
     install all the requierments
-    
+    This project is trained almost 12 hour with  "epochs": 300,   "batch_size": 60 , i wouldn't recommended you to use below 32  and  don't forget to use your GPU if u have more  use upto "batch_size": 100, or "batch_size": 50, if not you can use 32.
     
 </p>
+
+<h1>For more you can use the documentation down there 👇👇👇 thank you for ur time </h1>
 
 
 
