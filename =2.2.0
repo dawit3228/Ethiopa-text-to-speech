@@ -1,0 +1,72 @@
+Looking in indexes: https://pypi.org/simple, https://pypi.ngc.nvidia.com
+Collecting phonemizer
+  Downloading phonemizer-3.2.1-py3-none-any.whl (90 kB)
+Collecting attrs>=18.1
+  Downloading attrs-23.1.0-py3-none-any.whl (61 kB)
+Collecting typing-extensions
+  Downloading typing_extensions-4.6.3-py3-none-any.whl (31 kB)
+Collecting segments
+  Downloading segments-2.2.1-py2.py3-none-any.whl (15 kB)
+Collecting dlinfo
+  Downloading dlinfo-1.2.1-py3-none-any.whl (3.6 kB)
+Requirement already satisfied: joblib in /mnt/d/all the projects/mozila/yup/lib/python3.8/site-packages (from phonemizer) (1.2.0)
+Collecting regex
+  Downloading regex-2023.6.3-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (772 kB)
+Collecting csvw>=1.5.6
+  Downloading csvw-3.1.3-py2.py3-none-any.whl (56 kB)
+Collecting clldutils>=1.7.3
+  Downloading clldutils-3.19.0-py2.py3-none-any.whl (1.7 MB)
+Collecting colorama
+  Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Collecting babel
+  Downloading Babel-2.12.1-py3-none-any.whl (10.1 MB)
+Collecting isodate
+  Downloading isodate-0.6.1-py2.py3-none-any.whl (41 kB)
+Collecting jsonschema
+  Downloading jsonschema-4.17.3-py3-none-any.whl (90 kB)
+Collecting python-dateutil
+  Downloading python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+Collecting rdflib
+  Downloading rdflib-6.3.2-py3-none-any.whl (528 kB)
+Collecting rfc3986<2
+  Downloading rfc3986-1.5.0-py2.py3-none-any.whl (31 kB)
+Collecting uritemplate>=3.0.0
+  Downloading uritemplate-4.1.1-py2.py3-none-any.whl (10 kB)
+Requirement already satisfied: requests in /mnt/d/all the projects/mozila/yup/lib/python3.8/site-packages (from csvw>=1.5.6->segments->phonemizer) (2.31.0)
+Collecting language-tags
+  Downloading language_tags-1.2.0-py3-none-any.whl (213 kB)
+Collecting colorlog
+  Downloading colorlog-6.7.0-py2.py3-none-any.whl (11 kB)
+Collecting pylatexenc
+  Downloading pylatexenc-2.10.tar.gz (162 kB)
+Requirement already satisfied: markdown in /mnt/d/all the projects/mozila/yup/lib/python3.8/site-packages (from clldutils>=1.7.3->segments->phonemizer) (3.4.3)
+Requirement already satisfied: markupsafe in /mnt/d/all the projects/mozila/yup/lib/python3.8/site-packages (from clldutils>=1.7.3->segments->phonemizer) (2.1.3)
+Collecting tabulate>=0.7.7
+  Downloading tabulate-0.9.0-py3-none-any.whl (35 kB)
+Collecting lxml
+  Downloading lxml-4.9.2-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl (7.1 MB)
+Collecting pytz>=2015.7; python_version < "3.9"
+  Downloading pytz-2023.3-py2.py3-none-any.whl (502 kB)
+Requirement already satisfied: six in /mnt/d/all the projects/mozila/yup/lib/python3.8/site-packages (from isodate->csvw>=1.5.6->segments->phonemizer) (1.16.0)
+Collecting importlib-resources>=1.4.0; python_version < "3.9"
+  Downloading importlib_resources-5.12.0-py3-none-any.whl (36 kB)
+Collecting pyrsistent!=0.17.0,!=0.17.1,!=0.17.2,>=0.14.0
+  Downloading pyrsistent-0.19.3-py3-none-any.whl (57 kB)
+Collecting pkgutil-resolve-name>=1.3.10; python_version < "3.9"
+  Downloading pkgutil_resolve_name-1.3.10-py3-none-any.whl (4.7 kB)
+Collecting pyparsing<4,>=2.1.0
+  Downloading pyparsing-3.0.9-py3-none-any.whl (98 kB)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /mnt/d/all the projects/mozila/yup/lib/python3.8/site-packages (from requests->csvw>=1.5.6->segments->phonemizer) (2.0.2)
+Requirement already satisfied: idna<4,>=2.5 in /mnt/d/all the projects/mozila/yup/lib/python3.8/site-packages (from requests->csvw>=1.5.6->segments->phonemizer) (3.4)
+Requirement already satisfied: charset-normalizer<4,>=2 in /mnt/d/all the projects/mozila/yup/lib/python3.8/site-packages (from requests->csvw>=1.5.6->segments->phonemizer) (3.1.0)
+Requirement already satisfied: certifi>=2017.4.17 in /mnt/d/all the projects/mozila/yup/lib/python3.8/site-packages (from requests->csvw>=1.5.6->segments->phonemizer) (2023.5.7)
+Requirement already satisfied: importlib-metadata>=4.4; python_version < "3.10" in /mnt/d/all the projects/mozila/yup/lib/python3.8/site-packages (from markdown->clldutils>=1.7.3->segments->phonemizer) (6.6.0)
+Requirement already satisfied: zipp>=3.1.0; python_version < "3.10" in /mnt/d/all the projects/mozila/yup/lib/python3.8/site-packages (from importlib-resources>=1.4.0; python_version < "3.9"->jsonschema->csvw>=1.5.6->segments->phonemizer) (3.15.0)
+Building wheels for collected packages: pylatexenc
+  Building wheel for pylatexenc (setup.py): started
+  Building wheel for pylatexenc (setup.py): finished with status 'done'
+  Created wheel for pylatexenc: filename=pylatexenc-2.10-py3-none-any.whl size=136824 sha256=a712eb7d2a1ebea82701dbeb10d710be7e70df794e148f29484316ac05da257c
+  Stored in directory: /tmp/pip-ephem-wheel-cache-xyu6iy8v/wheels/72/99/be/81d9bcdf5dd5ee5acd8119a9dd5bc07204c9ce205fd341b021
+Successfully built pylatexenc
+Installing collected packages: attrs, typing-extensions, regex, colorama, pytz, babel, isodate, importlib-resources, pyrsistent, pkgutil-resolve-name, jsonschema, python-dateutil, pyparsing, rdflib, rfc3986, uritemplate, language-tags, csvw, colorlog, pylatexenc, tabulate, lxml, clldutils, segments, dlinfo, phonemizer
+Successfully installed attrs-23.1.0 babel-2.12.1 clldutils-3.19.0 colorama-0.4.6 colorlog-6.7.0 csvw-3.1.3 dlinfo-1.2.1 importlib-resources-5.12.0 isodate-0.6.1 jsonschema-4.17.3 language-tags-1.2.0 lxml-4.9.2 phonemizer-3.2.1 pkgutil-resolve-name-1.3.10 pylatexenc-2.10 pyparsing-3.0.9 pyrsistent-0.19.3 python-dateutil-2.8.2 pytz-2023.3 rdflib-6.3.2 regex-2023.6.3 rfc3986-1.5.0 segments-2.2.1 tabulate-0.9.0 typing-extensions-4.6.3 uritemplate-4.1.1
