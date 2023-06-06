@@ -1,12 +1,14 @@
 <h1> Ethiopia Text to speech </h1>
-<h2> in short if you wana train your ur own model go to TTS/bin/train_tacotron.py/</h2>
-<p> so here is the thing  all you have to do is change your projects path in in the folder TTS/tts/configs/config.json in this Folder change the <b>output_path</b> and in last line change the path where your dataset directory is and your good to go 
-    ```bash
+<h2> in short if you wana train your ur own model go to TTS/bin/train_tacotron.py/</h2><br>
+<p> so here is the thing  all you have to do is change your projects path in in the folder TTS/tts/configs/config.json in this Folder change the <b>output_path</b> and in last the line change the path where your dataset directory is and your good to go <br>
+ i use ubuntu 20.04 version <br> it doesn't matter whether your using cmd terminal or linux ,ubuntu just know how to use it
+
+   ```bash
 python TTS/bin/train_tacotron.py --config_path TTS/tts/configs/config.json
 ```
    i use python 3.8.10
     install all the requierments
-    This project is trained almost 12 hour with  "epochs": 300,   "batch_size": 60 , i wouldn't recommended you to use below 32  and  don't forget to use your GPU if u have more  use upto "batch_size": 100, or "batch_size": 50, if not you can use 32.
+    This project is trained almost 12 hours with  "epochs": 300,   "batch_size": 60 , i wouldn't recommended you to use below 32  and  don't forget to use your GPU if u have more  use upto "batch_size": 100, or "batch_size": 50, if not you can use 32.
     
 </p>
 
