@@ -1,5 +1,5 @@
 <h1> Ethiopia Text to speech </h1>
-<h2> in short i u want train your ur own model go to TTS/bin/train_tacotron.py/</h2>
+<h2> in short if you wana train your ur own model go to TTS/bin/train_tacotron.py/</h2>
 <p> so here is the thing  all you have to do is change your projects path in in the folder TTS/tts/configs/config.json in this Folder change the <b>output_path</b> and in last line change the path where your dataset directory is and your good to go 
     ```bash
 python TTS/bin/train_tacotron.py --config_path TTS/tts/configs/config.json
