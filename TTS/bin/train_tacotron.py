@@ -13,6 +13,7 @@ import numpy as np
 import torch
 from torch.utils.data import DataLoader
 from TTS.tts.datasets.preprocess import load_meta_data
+from TTS.tts.datasets.preprocess import *
 from TTS.tts.datasets.TTSDataset import MyDataset
 from TTS.tts.layers.losses import TacotronLoss
 from TTS.tts.utils.generic_utils import check_config_tts, setup_model
@@ -22,6 +23,7 @@ from TTS.tts.utils.speakers import parse_speakers
 from TTS.tts.utils.synthesis import synthesis
 from TTS.tts.utils.text.symbols import make_symbols, phonemes, symbols
 from TTS.tts.utils.visual import plot_alignment, plot_spectrogram
+from TTS.tts.utils.visual import *
 from TTS.utils.audio import AudioProcessor
 from TTS.utils.console_logger import ConsoleLogger
 from TTS.utils.distribute import (DistributedSampler, apply_gradient_allreduce,
