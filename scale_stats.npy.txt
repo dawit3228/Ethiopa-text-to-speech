@@ -1,0 +1,1 @@
+TTS/bin/compute_statistics.py --config_path TTS/tts/configs/config.json --out_path D:/all the projects/mozila/TTS/TTS/tts/npy/scale_stats.npy
