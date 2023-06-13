@@ -1,3 +1,10 @@
 Looking in indexes: https://pypi.org/simple, https://pypi.ngc.nvidia.com
-Requirement already satisfied: scipy in /mnt/d/all the projects/mozila/yup/lib/python3.8/site-packages (1.10.1)
-Requirement already satisfied: numpy<1.27.0,>=1.19.5 in /mnt/d/all the projects/mozila/yup/lib/python3.8/site-packages (from scipy) (1.24.3)
+Requirement already satisfied: scipy in /mnt/d/all the projects/mozila/my/lib/python3.8/site-packages (1.10.1)
+Collecting numpy<1.27.0,>=1.19.5
+  Downloading numpy-1.24.3-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.3 MB)
+Installing collected packages: numpy
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.19.3
+    Uninstalling numpy-1.19.3:
+      Successfully uninstalled numpy-1.19.3
+Successfully installed numpy-1.24.3
