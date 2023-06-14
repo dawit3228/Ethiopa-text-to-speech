@@ -64,10 +64,11 @@ For the best results when training a model, you will need:
 <p>You need to prepare a configuration file that describes how your custom TTS will be configured. This file is used by multiple parts of Mozilla TTS when preparing for training, performing training, and generating audio from your custom TTS. Unfortunately, though this file is very important, the documentation for Mozilla TTS largely glosses over how to customize this file.
 
 costomize you the config.json file  <a href="https://github.com/dawit3228/Ethiopa-text-to-speech/blob/master/TTS/tts/configs/config.json"> config.json</a> </p>
-<p>so now you need to prepare the  .npy here is  
- ```bash
+so now you need to prepare the  .npy here is  
+```bash
 python3 TTS/bin/compute_statistics.py --config_path /path/to/your/project/config.json --out_path /path/to/your/project/scale_stats.npy
-```<br><br>
+```
+
 <b>*NOTE*</b> Don't Change  scale_stats leave it as it is 
 </p>
 If successful, this will generate a scale_stats.npy file under /path/to/your/project/scale_stats.npy. Be sure that the path in the audio.stats_path setting of your config.json file matches this path.
