@@ -7,23 +7,31 @@
   <p>to set CUDA what this video <a href="https://youtu.be/1HzYU2_t3yc">NVIDIA CUDA installation</a></p>
   <p> and at last download and install git<a href="https://github.com/git-for-windows/git/releases/download/v2.41.0.windows.1/Git-2.41.0-64-bit.exe"> here to download GIT</a></p>
 <center><h1>Lets Start</h1></center>
- 1. Clone   ```bash
-https://github.com/mozilla/TTS.git
-``` </br></br>
+ 1. Clone 
+ 2.   ```bash
+git clone https://github.com/mozilla/TTS.git
+```
+</br></br>
  2. Create virtual Enviromet ```bash   python3 -m venv name  ```<br></br>
  3. To activate  ```bash  source name/bin/activate ```
  4. you need to install all the requirements.txt  
-    ```bash
+ <br>
+ ```bash
 pip install -r requirements.txt
-```</br></br>
+```
+</br></br>
  5. don't forget to install TTS ```bash pip install TTS ```<br><br>
  6. i upload The Audio (.wav) so you can use it ➡️<a href="https://github.com/dawit3228/Ethiopa-text-to-speech/tree/master/TTS/tts/datasets/wavs/wavs">Audio datasets</a> this is for the Text dataset to download click the link➡️<a href="https://github.com/dawit3228/Ethiopa-text-to-speech/blob/master/TTS/tts/datasets/Amharic.txt">text Dataset</a><br><br>
- 7. <p>Paste this in your terminal </p> ```bash
+ 7. <p>Paste this in your terminal </p>
+ ```bash
 sudo apt-get install espeak
-```</br></br>
- 8.<p>This wil make it editable </p> ```bash
+```
+</br></br>
+ 8.<p>This wil make it editable </p>
+```bash
 pip install -e .
-```</br></br>
+```
+</br></br>
 <h2> If your thinking to make your own audio and train with your own voice </h2>
 Prerequisites for Training a Model
 For the best results when training a model, you will need:
