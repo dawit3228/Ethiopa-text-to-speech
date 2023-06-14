@@ -8,6 +8,10 @@
   <p> and at last download and install git<a href="https://github.com/git-for-windows/git/releases/download/v2.41.0.windows.1/Git-2.41.0-64-bit.exe"> here to download GIT</a></p>
 <center><h1>Lets Start</h1></center>
 ```bash
+  npm install my-project
+  cd my-project
+```
+```bash
    git clone https://github.com/mozilla/TTS.git
 ```
 </br></br>
