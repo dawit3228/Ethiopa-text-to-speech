@@ -78,7 +78,7 @@ raining the Model.
 It's now time for the moment of truth -- it's time to start training your model!
  
  ```bash
-python TTS/bin/train_tacotron.py --config_path TTS/tts/configs/config.json
+python3 TTS/bin/train_tacotron.py --config_path TTS/tts/configs/config.json
 ```
 
 
