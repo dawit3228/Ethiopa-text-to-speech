@@ -69,15 +69,18 @@ so now you need to prepare the  .npy here is
 python3 TTS/bin/compute_statistics.py --config_path /path/to/your/project/config.json --out_path /path/to/your/project/scale_stats.npy
 ```
 
-<b>*NOTE*</b> Don't Change  scale_stats leave it as it is 
-</p>
+<b>*NOTE*</b> Don't Change  scale_stats leave it as it is .
+
+
 If successful, this will generate a scale_stats.npy file under /path/to/your/project/scale_stats.npy. Be sure that the path in the audio.stats_path setting of your config.json file matches this path.
-<center><h1>Training the Model</h1><center>
-<p>It's now time for the moment of truth -- it's time to start training your model!</p>
-   ```bash
+raining the Model.
+
+It's now time for the moment of truth -- it's time to start training your model!
+ 
+ ```bash
 python TTS/bin/train_tacotron.py --config_path TTS/tts/configs/config.json
 ```
-<br>
+
 
 <p>This process will take several hours, if not days. If your machine supports CUDA and has it properly configured, the process will run more quickly than if you are just relying on CPU alone.</p>
 <h1>
