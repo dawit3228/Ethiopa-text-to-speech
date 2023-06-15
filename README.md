@@ -78,6 +78,10 @@ raining the Model.
 It's now time for the moment of truth -- it's time to start training your model!
  
  ```bash
+CUDA_VISIBLE_DEVICES="0" python3 TTS/bin/train_tacotron.py --config_path TTS/tts/configs/config.json
+```
+if you don't have GPU use this
+```bash
 python3 TTS/bin/train_tacotron.py --config_path TTS/tts/configs/config.json
 ```
 
