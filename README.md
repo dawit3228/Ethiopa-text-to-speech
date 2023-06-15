@@ -75,7 +75,8 @@ python3 TTS/bin/compute_statistics.py --config_path /path/to/your/project/config
 If successful, this will generate a scale_stats.npy file under /path/to/your/project/scale_stats.npy. Be sure that the path in the audio.stats_path setting of your config.json file matches this path.
 raining the Model.
 
-It's now time for the moment of truth -- it's time to start training your model!
+It's now time for the moment of truth -- it's time to start training your model!.
+
 <b>Only if you have GPU </b>
  
  ```bash
