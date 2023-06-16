@@ -22,11 +22,11 @@ git clone https://github.com/mozilla/TTS.git
 ```
    
 
- 1. To activate
+ 3. To activate
  ```bash  
 source name/bin/activate 
 ```
- 3. you need to install all the requirements.txt  
+ 4. you need to install all the requirements.txt  
 ```bash
 pip install -r requirements.txt
 ```
@@ -35,12 +35,12 @@ don't forget to install TTS
 pip install TTS
 ```
 
- 1. i upload The Audio (.wav) so you can use it ➡️<a href="https://github.com/dawit3228/Ethiopa-text-to-speech/tree/master/TTS/tts/datasets/wavs/wavs">Audio datasets</a> this is for the Text dataset to download click the link➡️<a href="https://github.com/dawit3228/Ethiopa-text-to-speech/blob/master/TTS/tts/datasets/Amharic.txt">text Dataset</a><br><br>
- 2. <p>Paste this in your terminal </p> 
+ 5. i upload The Audio (.wav) so you can use it ➡️<a href="https://github.com/dawit3228/Ethiopa-text-to-speech/tree/master/TTS/tts/datasets/wavs/wavs">Audio datasets</a> this is for the Text dataset to download click the link➡️<a href="https://github.com/dawit3228/Ethiopa-text-to-speech/blob/master/TTS/tts/datasets/Amharic.txt">text Dataset</a><br><br>
+ 6. <p>Paste this in your terminal </p> 
 ```bash
 sudo apt-get install espeak
 ```
- 8.<p>This wil make it editable </p> 
+ 7.<p>This wil make it editable </p> 
 ```bash
 pip install -e .
 ```
@@ -48,17 +48,17 @@ pip install -e .
 Prerequisites for Training a Model
 For the best results when training a model, you will need:
 
-1. Short audio recordings (at least 100) that are:<br>
+8. Short audio recordings (at least 100) that are:<br>
         &#x2022;In 16-bit, mono PCM WAV format.<br>
         &#x2022;Between 1 and 10 seconds each.<br>
         &#x2022;Have a sample rate of 22050 Hz.<br>
         &#x2022;Have a minimum of background noise and distortion.<br>
         &#x2022;Have no long pauses of silence at the beginning 
         &#x2022;throughout the middle, and at the end.<br>
-2. indicates what text is spoken in the WAV file.
-3. A configuration file tailored to your data set and chosen vocoder (e.g. Tacotron, WavGrad, etc).
-4. A machine with a fast CPU (ideally an nVidia GPU with CUDA support and at least 12 GB of GPU RAM; you cannot effectively use CUDA if you have less than 8 GB OF GPU RAM).
-5. Lots of RAM (at least 16 GB of RAM is preferable).
+9. indicates what text is spoken in the WAV file.
+10. A configuration file tailored to your data set and chosen vocoder (e.g. Tacotron, WavGrad, etc).
+11. A machine with a fast CPU (ideally an nVidia GPU with CUDA support and at least 12 GB of GPU RAM; you cannot effectively use CUDA if you have less than 8 GB OF GPU RAM).
+12. Lots of RAM (at least 16 GB of RAM is preferable).
 
 <center><h2>Preparing the config.json</h2></center>
 <p>You need to prepare a configuration file that describes how your custom TTS will be configured. This file is used by multiple parts of Mozilla TTS when preparing for training, performing training, and generating audio from your custom TTS. Unfortunately, though this file is very important, the documentation for Mozilla TTS largely glosses over how to customize this file.
