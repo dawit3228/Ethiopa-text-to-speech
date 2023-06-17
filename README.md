@@ -87,18 +87,7 @@ to make sure you are using your GPU open a new terminal and paste this.
 ```bash
 nvidia-smi
 ```
- &#x2022; Thos will show this 👇.
 
-|=================================================================|
-|    0   N/A  N/A     13759      C   /python3.8       N/A      |  ⬅️.
-
-if your using you GPU this will show up.
-|    0   N/A  N/A     13759      C   /python3.8       N/A      |
-+-----------------------------------------------------------------+
-
-
-and if you not using your GPU and instade if your using CPU this will show up when you paste nvidia-smi.
-|  No running processes found                                                 |
 
 if you want to see your tensorboard how is train log here is it.
 ```bash
