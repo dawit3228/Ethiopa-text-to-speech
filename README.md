@@ -83,6 +83,40 @@ It's now time for the moment of truth -- it's time to start training your model!
 CUDA_VISIBLE_DEVICES="0" python3 TTS/bin/train_tacotron.py --config_path TTS/tts/configs/config.json
 ```
 
+to make sure you are using your GPU open a new terminal and paste this.
+```bash
+nvidia-smi
+```
+ &#x2022; Thos will show this 👇.
+
+ Sat Jun 17 07:10:46 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 525.112      Driver Version: 528.92       CUDA Version: 12.0     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  NVIDIA GeForce ...  On   | 00000000:01:00.0  On |                  N/A |
+| N/A   82C    P2    36W /  88W |   4822MiB /  6144MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0   N/A  N/A     13759      C   /python3.8                      N/A      |  ⬅️.
+
+if your using you GPU this will show up.
+|    0   N/A  N/A     13759      C   /python3.8                      N/A      |
++-----------------------------------------------------------------------------+
+
+
+and if you not using your GPU and instade if your using CPU this will show up when you paste nvidia-smi.
+|  No running processes found                                                 |
+
 if you want to see your tensorboard how is train log here is it.
 ```bash
 tensorboard --logdir=add/this/to/your/path
