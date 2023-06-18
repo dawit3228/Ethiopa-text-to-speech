@@ -82,6 +82,17 @@ It's now time for the moment of truth -- it's time to start training your model!
  ```bash
 CUDA_VISIBLE_DEVICES="0" python3 TTS/bin/train_tacotron.py --config_path TTS/tts/configs/config.json
 ```
+
+to make sure you are using your GPU open a new terminal and paste this.
+```bash
+nvidia-smi
+```
+
+
+if you want to see your tensorboard how is train log here is it.
+```bash
+tensorboard --logdir=add/this/to/your/path
+```
 if you don't have GPU use this
 ```bash
 python3 TTS/bin/train_tacotron.py --config_path TTS/tts/configs/config.json
@@ -94,4 +105,6 @@ python3 TTS/bin/train_tacotron.py --config_path TTS/tts/configs/config.json
 
 <b>if you have any question ask here is my instagram page</b> <a href="https://www.instagram.com/davemoment_2nd/"><b>Contact me</b></a>
 </h1>
+
+<h1><b>REMEMBER </b> if you had less dataset use more epoch </h1>
 <h3>Read Documentation <a href="https://github.com/mozilla/TTS">Mozilla TTS <h3>
