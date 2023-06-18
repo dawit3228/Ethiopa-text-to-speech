@@ -104,4 +104,6 @@ python3 TTS/bin/train_tacotron.py --config_path TTS/tts/configs/config.json
 
 <b>if you have any question ask here is my instagram page</b> <a href="https://www.instagram.com/davemoment_2nd/"><b>Contact me</b></a>
 </h1>
+
+<h1><b>REMEMBER </b> if you had less dataset use more epoch </h1>
 <h3>Read Documentation <a href="https://github.com/mozilla/TTS">Mozilla TTS <h3>
