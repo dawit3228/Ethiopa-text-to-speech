@@ -13,7 +13,7 @@
  ##Lets Start
  1. Clone   
  ```bash
-git clone https://github.com/mozilla/TTS.git](https://github.com/dawit3228/Ethiopa-text-to-speech.git
+https://github.com/dawit3228/Ethiopa-text-to-speech.git
 ```
 
  2. Create virtual Enviromet 
