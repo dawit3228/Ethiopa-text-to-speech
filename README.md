@@ -103,7 +103,7 @@ python3 TTS/bin/train_tacotron.py --config_path TTS/tts/configs/ljspeech_tacotro
 <p>This process will take several hours, if not days. If your machine supports CUDA and has it properly configured, the process will run more quickly than if you are just relying on CPU alone.</p>
 <h1>
 
-<b>if you have any question ask here is my instagram page</b> <a href="https://www.instagram.com/davemoment_2nd/"><b>Contact me</b></a>
+<b>if you have any question ask here is my instagram page</b> <a href="https://www.zemenu.org/contact.html"><b>Contact US</b></a>
 </h1>
 
 <h1><b>REMEMBER </b> if you had less dataset use more epoch </h1>
