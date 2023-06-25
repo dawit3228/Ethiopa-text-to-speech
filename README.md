@@ -80,7 +80,7 @@ It's now time for the moment of truth -- it's time to start training your model!
 <b>Only if you have GPU </b>
  
  ```bash
-CUDA_VISIBLE_DEVICES="0" python3 TTS/bin/train_tacotron.py --config_path TTS/tts/configs/config.json
+CUDA_VISIBLE_DEVICES="0" python3 TTS/bin/train_tacotron.py --config_path TTS/tts/configs/ljspeech_tacotron2_dynamic_conv_attn.json
 ```
 
 to make sure you are using your GPU open a new terminal and paste this.
@@ -95,7 +95,7 @@ tensorboard --logdir=add/this/to/your/path
 ```
 if you don't have GPU use this
 ```bash
-python3 TTS/bin/train_tacotron.py --config_path TTS/tts/configs/config.json
+python3 TTS/bin/train_tacotron.py --config_path TTS/tts/configs/ljspeech_tacotron2_dynamic_conv_attn.json
 ```
 <br>
 
