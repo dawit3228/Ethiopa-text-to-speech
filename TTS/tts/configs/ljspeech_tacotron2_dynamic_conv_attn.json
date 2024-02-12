@@ -37,7 +37,7 @@
         "symmetric_norm": true, // move normalization to range [-1, 1]
         "max_norm": 4.0,        // scale normalization to range [-max_norm, max_norm] or [0, max_norm]
         "clip_norm": true,      // clip normalized values into the range.
-        "stats_path": "/home/erogol/Data/LJSpeech-1.1/scale_stats.npy"    // DO NOT USE WITH MULTI_SPEAKER MODEL. scaler stats file computed by 'compute_statistics.py'. If it is defined, mean-std based notmalization is used and other normalization params are ignored
+        "stats_path": "TTS/tts/datasets/output/scale_stats.npy"    // DO NOT USE WITH MULTI_SPEAKER MODEL. scaler stats file computed by 'compute_statistics.py'. If it is defined, mean-std based notmalization is used and other normalization params are ignored
     },
 
     // VOCABULARY PARAMETERS
@@ -87,7 +87,7 @@
     // OPTIMIZER
     "noam_schedule": false,        // use noam warmup and lr schedule.
     "grad_clip": 1.0,              // upper limit for gradients for clipping.
-    "epochs": 1000,                // total number of epochs to train.
+    "epochs": 477,                // total number of epochs to train.
     "lr": 0.0001,                  // Initial learning rate. If Noam decay is active, maximum learning rate.
     "wd": 0.000001,                // Weight decay weight.
     "warmup_steps": 4000,          // Noam decay steps to increase the learning rate from 0 to "lr"
@@ -99,7 +99,7 @@
     "prenet_dropout": false,       // enable/disable dropout at prenet.
 
     // TACOTRON ATTENTION
-    "attention_type": "dynamic_convolution",  // 'original' , 'graves', 'dynamic_convolution'
+    "attention_type": "graves",  // 'original' , 'graves', 'dynamic_convolution'
     "attention_heads": 4,          // number of attention heads (only for 'graves')
     "attention_norm": "softmax",   // softmax or sigmoid.
     "windowing": false,            // Enables attention windowing. Used only in eval mode.
@@ -119,7 +119,7 @@
     "print_step": 25,       // Number of steps to log training on console.
     "tb_plot_step": 100,    // Number of steps to plot TB training figures.
     "print_eval": false,     // If True, it prints intermediate loss values in evalulation.
-    "save_step": 10000,      // Number of training steps expected to save traninpg stats and checkpoints.
+    "save_step": 477,      // Number of training steps expected to save traninpg stats and checkpoints.
     "checkpoint": true,     // If true, it saves checkpoints per "save_step"
     "tb_model_param_stats": false,     // true, plots param stats per layer on tensorboard. Might be memory consuming, but good for debugging.
 
@@ -134,10 +134,10 @@
     "compute_input_seq_cache": false,  // if true, text sequences are computed before starting training. If phonemes are enabled, they are also computed at this stage.
 
     // PATHS
-    "output_path": "/home/erogol/Models/LJSpeech/",
+    "output_path": "TTS/tts/datasets/output/Main/",
 
     // PHONEMES
-    "phoneme_cache_path": "/home/erogol/Models/phoneme_cache/",  // phoneme computation is slow, therefore, it caches results in the given folder.
+    "phoneme_cache_path": "TTS/tts/phoneme_cache/",  // phoneme computation is slow, therefore, it caches results in the given folder.
     "use_phonemes": true,           // use phonemes instead of raw characters. It is suggested for better pronounciation.
     "phoneme_language": "en-us",     // depending on your target language, pick one from  https://github.com/bootphon/phonemizer#languages
 
@@ -162,9 +162,9 @@
         [
             {
                 "name": "ljspeech",
-                "path": "/home/erogol/Data/LJSpeech-1.1/",
-                "meta_file_train": "metadata.csv", // for vtck if list, ignore speakers id in list for train, its useful for test cloning with new speakers
-                "meta_file_val": null
+                "path": "TTS/tts/datasets/",
+                "meta_file_train": "Amharic.txt", // for vtck if list, ignore speakers id in list for train, its useful for test cloning with new speakers
+                "meta_file_val": "Amharic.txt"
             }
         ]
 }

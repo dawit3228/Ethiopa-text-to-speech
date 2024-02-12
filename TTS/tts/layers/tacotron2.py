@@ -154,7 +154,7 @@ class Decoder(nn.Module):
         self.r = r
         self.encoder_embedding_dim = in_channels
         self.separate_stopnet = separate_stopnet
-        self.max_decoder_steps = 1000
+        self.max_decoder_steps = 10000
         self.stop_threshold = 0.5
 
         # model dimensions
